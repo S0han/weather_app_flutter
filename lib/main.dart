@@ -34,6 +34,22 @@ class WeatherPageState extends State<WeatherPage> {
             width: double.infinity,
             height: double.infinity,
           ),
+          Padding(
+            padding: EdgeInsets.all(15),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  SizedBox(height: 40),
+                  TextField(
+                    decoration: const InputDecoration(
+                      suffixIcon: Icon(Icons.search),
+                      filled: true,
+                      fillColor: Colors.black26,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(16)))),
+                  ),
+                ],),)
+          ),
         ],
       )
     );
