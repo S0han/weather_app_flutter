@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const WeatherApp());
+  runApp(WeatherApp());
 }
 
 class WeatherApp extends StatelessWidget {
@@ -13,3 +13,18 @@ class WeatherApp extends StatelessWidget {
   }
 }
 
+class WeatherPage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => WeatherPageState();
+}
+
+class WeatherPageState extends State<WeatherPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text('Weather App'),
+        )
+    );
+  }
+}
