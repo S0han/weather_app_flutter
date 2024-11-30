@@ -72,6 +72,18 @@ class WeatherPageState extends State<WeatherPage> {
                         fontSize: 90,
                         fontWeight: FontWeight.bold)
                     ),
+                    Row(
+                      children: [
+                        Text(
+                          'Haze',
+                          style:
+                            TextStyle(fontSize: 40, fontWeight: FontWeight.w500),
+                        ),
+                        Image.asset(
+                          'assets/icons/Haze.png',
+                          height: 80,
+                        )
+                    ]),
                 ],),)
           ),
         ],
