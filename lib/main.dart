@@ -62,8 +62,15 @@ class WeatherPageState extends State<WeatherPage> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                    ],
-                  ),
+                    ],),
+                    SizedBox(height: 50,),
+                    Text(
+                      '24˚C',
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 90,
+                        fontWeight: FontWeight.bold)
+                    ),
                 ],),)
           ),
         ],
