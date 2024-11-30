@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/widget/weather_data_tile.dart';
 
 void main() {
   runApp(WeatherApp());
@@ -104,20 +105,34 @@ class WeatherPageState extends State<WeatherPage> {
                     color: Colors.transparent,
                     child: Container(
                       child: Padding (
-                      padding: EdgeInsets.all(15),
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [Text('Sunrise'), Text('Sunset')],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [Text('6:15AM'), Text('6:00PM')],
-                          )
-                        ],
-                      ))
-                  )),
+                        padding: EdgeInsets.all(15),
+                        child: Column(
+                          children: [
+                            WeatherDataTile(
+                                index1: "Sunrise", 
+                                index2: "Sunset", 
+                                value1: "6:15AM", 
+                                value2: "6:30PM"
+                              ),
+                            SizedBox(height: 15,),
+                            WeatherDataTile(
+                                index1: "Humidity", 
+                                index2: "Visibility", 
+                                value1: "4", 
+                                value2: "10000"
+                              ),
+                            SizedBox(height: 15,),
+                            WeatherDataTile(
+                                index1: "Precipitation", 
+                                index2: "Wind Speed", 
+                                value1: "6", 
+                                value2: "45"
+                              ),
+                            SizedBox(height: 15,),
+                          ],)
+                      )
+                    )
+                  ),
                 ],),)
           ),
         ],
