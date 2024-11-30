@@ -98,6 +98,26 @@ class WeatherPageState extends State<WeatherPage> {
                         style: TextStyle(fontSize: 22, fontStyle: FontStyle.italic),
                       ),
                   ]),
+                  SizedBox(height: 25),
+                  Card(
+                    elevation: 5,
+                    color: Colors.transparent,
+                    child: Container(
+                      child: Padding (
+                      padding: EdgeInsets.all(15),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [Text('Sunrise'), Text('Sunset')],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [Text('6:15AM'), Text('6:00PM')],
+                          )
+                        ],
+                      ))
+                  )),
                 ],),)
           ),
         ],
