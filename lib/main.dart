@@ -38,6 +38,7 @@ class WeatherPageState extends State<WeatherPage> {
             padding: EdgeInsets.all(15),
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: 40),
                   TextField(
