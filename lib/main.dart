@@ -84,6 +84,20 @@ class WeatherPageState extends State<WeatherPage> {
                           height: 80,
                         )
                     ]),
+                  SizedBox(height: 25),
+                  Row(
+                    children: [
+                      const Icon(Icons.arrow_upward),
+                      Text(
+                        '35˚C',
+                        style: TextStyle(fontSize: 22, fontStyle: FontStyle.italic),
+                      ),
+                      const Icon(Icons.arrow_downward),
+                      Text(
+                        '25˚C',
+                        style: TextStyle(fontSize: 22, fontStyle: FontStyle.italic),
+                      ),
+                  ]),
                 ],),)
           ),
         ],
