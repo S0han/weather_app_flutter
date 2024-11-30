@@ -48,6 +48,22 @@ class WeatherPageState extends State<WeatherPage> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(16)))),
                   ),
+                  SizedBox(height: 15),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.location_on
+                      ),
+                      Text(
+                        'Toronto, ON',
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
                 ],),)
           ),
         ],
